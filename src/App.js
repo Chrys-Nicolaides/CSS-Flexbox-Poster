@@ -1,24 +1,37 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import "./App.css";
+import FlexWrap from "./Components/FlexWrap";
+import JustifyContent from "./Components/JustifyContent";
+import AlignContent from "./Components/AlignContent";
+
 
 function App() {
+
+  const [primaryColor, setPrimaryColor] = useState("#424242");
+  const [secondaryColor, setSecondaryColor] = useState("pink");
+
+  document.documentElement.style.setProperty("--primary-bg-color", primaryColor);
+  document.documentElement.style.setProperty("--secondary-bg-color", secondaryColor);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div>
+        <label>Background:</label>
+        <input className="input-color-picker" type="color"
+          onChange={(e) => setPrimaryColor(e.target.value)} />
+        <label>Color:</label>
+        <input className="input-color-picker" type="color"
+          onChange={(e) => setSecondaryColor(e.target.value)} />
+      </div>
+      <div>
+        <FlexWrap />
+      </div>
+      <div>
+        <JustifyContent />
+      </div>
+      <div>
+        <AlignContent />
+      </div>
     </div>
   );
 }

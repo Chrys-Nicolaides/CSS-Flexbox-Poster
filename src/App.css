@@ -1,38 +1,155 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  --primary-bg-color: #424242;
+  --secondary-bg-color: pink;
+  --border-radius: 12px;
+  --box-shadow: 4px 4px 12px rgba(61, 57, 57, 0.5);
+  --primary-box-height: 30px;
+  --primary-box-width: 80px;
+  --secondary-box-width: 60px;
+  --tertiary-box-width: 50px;
+  --primary-container-height: 70px;
+  --secondary-container-height: 200px;
+  --primary-container-width: 600px;
+  --secondary-container-width: 300px;
+  --margin-box: 10px;
+  --margin-container: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+
+.FlexHeading {
+  text-align: left;
+  margin-left: 2em;
+  font-weight: 500;
+}
+.FlexSubHeading {
+  text-align: left;
+  margin-left: 2em;
+  font-weight: 400;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.flex-wrap-container {
+  height: var(--secondary-container-height);
+  width: var(--primary-container-width);
+  background-color: var(--primary-bg-color);
+  margin: var(--margin-container);
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
+
+}
+
+.flex-start-container {
+  height: var(--primary-container-height);
+  width: var(--primary-container-width);
+  background-color: var(--primary-bg-color);
+  margin: var(--margin-container);
+  display: flex;
+  justify-content: flex-start;
+}
+
+.flex-end-container {
+  height: var(--primary-container-height);
+  width: var(--primary-container-width);
+  background-color: var(--primary-bg-color);
+  margin: var(--margin-container);
+  display: flex;
+  justify-content: flex-end;
+}
+
+.flex-center-container {
+  height: var(--primary-container-height);
+  width: var(--primary-container-width);
+  background-color: var(--primary-bg-color);
+  margin: var(--margin-container);
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.space-between-container {
+  height: var(--primary-container-height);
+  width: var(--primary-container-width);
+  background-color: var(--primary-bg-color);
+  margin: var(--margin-container);
+  display: flex;
+  justify-content: space-between;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.space-around-container {
+  height: var(--primary-container-height);
+  width: var(--primary-container-width);
+  background-color: var(--primary-bg-color);
+  margin: var(--margin-container);
+  display: flex;
+  justify-content: space-around;
+}
+
+.space-evenly-container {
+  height: var(--primary-container-height);
+  width: var(--primary-container-width);
+  background-color: var(--primary-bg-color);
+  margin: var(--margin-container);
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.a-flex-start-container {
+  height: var(--secondary-container-height);
+  width: var(--secondary-container-width);
+  background-color: var(--primary-bg-color);
+  margin: var(--margin-container);
+  display: flex;
+  align-content: flex-start;
+  flex-wrap: wrap;
+}
+
+
+
+.justify-box-1, .justify-box-2, .justify-box-3, .justify-box-4, .justify-box-5, .justify-box-6 {
+  background-color: var(--secondary-bg-color);
+  height: var(--primary-box-height);
+  width: var(--secondary-box-width);
+  border-radius: var(--border-radius);
+  margin: var(--margin-box);
+  margin-top: 10px;
+  box-shadow: var(--box-shadow);
+}
+.justify-box-1, .justify-box-2, .justify-box-3, .justify-box-4, .justify-box-5, .justify-box-6 {
+  background-color: var(--secondary-bg-color);
+  height: var(--primary-box-height);
+  width: var(--secondary-box-width);
+  border-radius: var(--border-radius);
+  margin: var(--margin-box);
+  margin-top: 10px;
+  box-shadow: var(--box-shadow);
+}
+
+
+
+.wrap-box-1, .wrap-box-3, .wrap-box-6, .wrap-box-7, .wrap-box-9 {
+  background-color: var(--secondary-bg-color);
+  height: var(--primary-box-height);
+  width: var(--primary-box-width);
+  border-radius: var(--border-radius);
+  margin: var(--margin-box);
+  margin-top: 10px;
+  box-shadow: var(--box-shadow);
+}
+.wrap-box-2, .wrap-box-4, .wrap-box-5, .wrap-box-8, .wrap-box-10  {
+  background-color: var(--secondary-bg-color);
+  height: var(--primary-box-height);
+  width: var(--secondary-box-width);
+  border-radius: var(--border-radius);
+  margin: var(--margin-box);
+  margin-top: 10px;
+  box-shadow: var(--box-shadow);
 }
