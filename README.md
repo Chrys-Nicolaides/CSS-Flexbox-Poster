@@ -1,4 +1,4 @@
-### Flexbox! 🏃‍♀️
+### Flexbox! 💪🥊
 
 I've been lucky enough to enter the world of development where Flexbox exists as an awesome and widely supported tool, and not have to experience the infamous struggle of trying to vertically center anything using older CSS properties. 
 
@@ -29,6 +29,7 @@ The initial intention was for this to be composed on an A3 page. I would still l
 
 ## Things I would like to practice: 🤓
 * React state
+* UI design
 
 
 ---
