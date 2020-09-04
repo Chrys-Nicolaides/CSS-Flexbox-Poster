@@ -23,15 +23,9 @@ function App() {
         <input className="input-color-picker" type="color"
           onChange={(e) => setSecondaryColor(e.target.value)} />
       </div>
-      <div>
-        <FlexWrap />
-      </div>
-      <div>
-        <JustifyContent />
-      </div>
-      <div>
-        <AlignContent />
-      </div>
+      <FlexWrap />
+      <JustifyContent />
+      <AlignContent />
     </div>
   );
 }
