@@ -19,7 +19,7 @@ The initial intention was for this to be composed on an A3 page. I would still l
 ## Cool things I learned: 😎
 * CSS Variables
 * Adding a color picker 
-* [caniuse.com](caniuse.com)
+* [caniuse.com](https://caniuse.com)
 * [Flex gap](https://caniuse.com/#search=flex%20gap) isn't widely supported yet 
 
 
