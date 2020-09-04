@@ -1,3 +1,40 @@
+### Flexbox! 🏃‍♀️
+
+I've been lucky enough to enter the world of development where Flexbox exists as an awesome and widely supported tool, and not have to experience the infamous struggle of trying to vertically center anything using older CSS properties. 
+
+I loved learning how to use Flexbox and all its magic. I really liked the poster designed by Lynn Fisher for [CSS Tricks](https://css-tricks.com/product/css-flexbox-poster/). Seeing as it is the definitive guide, I thought recreating it would be a great exercise for me to practice using Flexbox.
+
+The initial intention was for this to be composed on an A3 page. I would still like to do this at some point because I love the idea of this poster but shipping something so fragile to South Africa is bound to end in disappointment.
+
+
+## In this exercise I aimed to learn more about: 📚
+* All things Flexbox!
+* Using CSS variables
+* Using React Components and practicing React
+
+
+## The biggest challenges I faced were: 🐱‍🏍
+* *The gap*
+
+## Cool things I learned: 😎
+* CSS Variables
+* Adding a color picker 
+* [caniuse.com](caniuse.com)
+* [Flex gap](https://caniuse.com/#search=flex%20gap) isn't widely supported yet 
+
+
+## Things I would like to learn next: ▶ 
+* Learning more advanced CSS selectors
+
+
+## Things I would like to practice: 🤓
+* React state
+
+
+---
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
