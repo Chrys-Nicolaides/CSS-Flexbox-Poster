@@ -13,13 +13,13 @@
 
 :root {
   --secondary-color: #424242;
-  --primary-color: pink;
-  --border-radius: 12px;
+  --primary-color: white;
+  --border-radius: 0;
   --box-shadow: 4px 4px 12px rgba(61, 57, 57, 0.5);
-  --primary-box-height: 80px;
-  --primary-box-width: 80px;
-  --secondary-box-width: 60px;
-  --tertiary-box-width: 50px;
+  --primary-box-height: 70px;
+  --primary-box-width: 35px;
+  --secondary-box-width: 35px;
+  --tertiary-box-width: 35px;
   --primary-container-height: 70px;
   --secondary-container-height: 200px;
   --primary-container-width: 600px;
@@ -97,4 +97,94 @@
 .a-flex-start-container {
   align-content: flex-start;
   flex-wrap: wrap;
+}
+
+.a-flex-end-container {
+  align-content: flex-end;
+  flex-wrap: wrap;
+}
+
+.a-center-container {
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.a-stretch-container {
+  align-content: stretch;
+  flex-wrap: wrap;
+}
+
+.a-stretch-container > .box {
+  width: initial;
+  height: initial;
+}
+
+.a-sb-container {
+  align-content: space-between;
+  flex-wrap: wrap;
+}
+.a-sa-container {
+  align-content: space-around;
+  flex-wrap: wrap;
+}
+
+.ai-flex-start-container {
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.ai-flex-end-container {
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+.ai-center-container {
+  align-items: center;
+  flex-wrap: wrap;
+}
+.ai-stretch-container {
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+.ai-stretch-container > .box {
+  height: initial;
+}
+
+.ai-baseline-container {
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+
+.order-container {
+  order: 5;
+  flex-wrap: wrap;
+}
+
+.order-reverse-container {
+  order: 3;
+  flex-wrap: wrap;
+}
+
+/* resizable box styling */
+
+.react-resizable {
+  position: relative;
+  background-color: var(--secondary-color);
+}
+.react-resizable-handle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  /* background-color: cyan; */
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  box-sizing: border-box;
+  background-position: bottom right;
+  padding: 0 3px 3px 0;
+}
+
+.react-resizable-handle-se {
+  bottom: 0;
+  right: 0;
+  cursor: se-resize;
 }
