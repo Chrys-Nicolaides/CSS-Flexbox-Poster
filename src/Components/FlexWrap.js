@@ -8,16 +8,10 @@ const FlexWrap = () => {
       <ResizableBox
         width={600}
         height={200}
-        className="flex-wrap-container container"
         minConstraints={[500, 200]}
-        maxConstraints={[800, 200]}
+        maxConstraints={[900, 200]}
+        className="flex-wrap-container container"
       >
-        {/* <span>Contents</span> */}
-        {/* <div
-          className="flex-wrap-container container"
-          
-          
-        > */}
         <div className="box"></div>
         <div className="box"></div>
         <div className="box"></div>
@@ -32,7 +26,6 @@ const FlexWrap = () => {
         <div className="box"></div>
         <div className="box"></div>
         <div className="box"></div>
-        {/* </div> */}
       </ResizableBox>
     </div>
   );

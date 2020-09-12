@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import "./App.css";
 // import marked from "marked";
 // import ReactMarkdown from "react-markdown";
-import { Resizable, ResizableBox } from "react-resizable";
 import FlexWrap from "./Components/FlexWrap";
 import JustifyContent from "./Components/JustifyContent";
 import AlignContent from "./Components/AlignContent";
