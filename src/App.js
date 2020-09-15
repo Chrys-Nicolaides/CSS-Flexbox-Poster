@@ -10,7 +10,7 @@ import Order from "./Components/Order";
 
 function App() {
   const [primaryColor, setPrimaryColor] = useState("white");
-  const [secondaryColor, setSecondaryColor] = useState("#424242");
+  const [secondaryColor, setSecondaryColor] = useState("#0F0F0F");
 
   document.documentElement.style.setProperty("--primary-color", primaryColor);
   document.documentElement.style.setProperty(
@@ -20,7 +20,7 @@ function App() {
 
   return (
     <div className="App">
-      <div>
+      <div className="custom-color-picker">
         <label>Background: </label>
         <input
           className="input-color-picker"
@@ -34,11 +34,25 @@ function App() {
           onChange={(e) => setPrimaryColor(e.target.value)}
         />
       </div>
-      <FlexWrap />
-      <JustifyContent />
-      <AlignContent />
-      <AlignItems />
-      <Order />
+      <div>
+        <hr className="horizontal-line"></hr>
+      </div>
+      <h2>CSS</h2>
+      <h1>Flexbox.</h1>
+      <div>
+        <p>
+          I'm baby locavore retro shoreditch offal. Jean shorts mixtape
+          gluten-free, forage raclette sriracha sustainable subway tile portland
+          yuccie hammock fixie. Chartreuse squid occupy try-hard bespoke
+          flannel. Hoodie vape shaman offal, af meh mustache. Bushwick kombucha
+          slow-carb neutra try-hard.
+        </p>
+        <FlexWrap />
+        <JustifyContent />
+        <AlignContent />
+        <AlignItems />
+        <Order />
+      </div>
     </div>
   );
 }

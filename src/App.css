@@ -1,18 +1,17 @@
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  margin: 8px;
+  padding: 8px;
+  background-color: rgb(24, 24, 24);
 }
 
 .App {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  text-align: left;
+  color: var(--primary-color);
 }
 
 :root {
-  --secondary-color: #424242;
+  --secondary-color: #0f0f0f;
   --primary-color: white;
   --border-radius: 0;
   --box-shadow: 4px 4px 12px rgba(61, 57, 57, 0.5);
@@ -28,12 +27,36 @@
   --margin-container: 10px;
 }
 
+h1 {
+  font-size: 12rem;
+  text-align: left;
+}
+
+h2 {
+  font-size: 8rem;
+  text-align: left;
+}
+
+p {
+  padding-bottom: 100px;
+  padding-top: 0;
+  max-width: 460px;
+}
+
+.horizontal-line {
+  background-color: white;
+  height: 15px;
+  width: 270px;
+  margin-left: -2px;
+}
+
 .container {
   height: var(--secondary-container-height);
   width: var(--primary-container-width);
   background-color: var(--secondary-color);
   margin: var(--margin-container);
   display: flex;
+  border: 0.5px solid white;
 }
 
 .container > .box {
@@ -68,6 +91,11 @@
 
 .flex-wrap-container {
   flex-wrap: wrap;
+}
+
+.App > div > div > .flex-wrap-container > .box {
+  height: 35px;
+  width: 70px;
 }
 
 .flex-start-container {
@@ -189,6 +217,23 @@
   width: 0;
   height: 0;
   border-bottom: 10px solid white;
-  border-left: 10px solid transparent;
+  border-left: 10px solid var(--secondary-color);
   padding: 0;
+}
+
+.custom-color-picker {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0;
+}
+
+.input-color-picker {
+  border: 0;
+  height: 20px;
+  padding: 0;
+}
+
+.input-color-picker:focus {
+  outline: black;
 }
