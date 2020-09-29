@@ -221,9 +221,20 @@ p {
   padding: 0;
 }
 
+.color-picker-header {
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
+  align-items: center;
+  padding: 0;
+  margin-right: 215px;
+  font-size: 24px;
+}
+
 .custom-color-picker {
   display: flex;
   justify-content: flex-end;
+  flex-wrap: wrap;
   align-items: center;
   padding: 0;
 }
@@ -236,4 +247,20 @@ p {
 
 .input-color-picker:focus {
   outline: black;
+}
+
+body::-webkit-scrollbar {
+  width: 15px;
+  height: 15px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: rgb(78, 77, 77);
+  border-radius: 15px;
+  box-shadow: inset 2px 2px 2px hsla(0, 0%, 69%, 0.151),
+    inset -2px -2px 2px rgba(0, 0, 0, 0.562);
+}
+
+body::-webkit-scrollbar-track {
+  background: linear-gradient(90deg, #201c29, #201c29 1px, #17141d 0, #17141d);
 }

@@ -20,14 +20,15 @@ function App() {
 
   return (
     <div className="App">
+      <div className="color-picker-header">color picker</div>
       <div className="custom-color-picker">
-        <label>Background: </label>
+        <label>background-color</label>
         <input
           className="input-color-picker"
           type="color"
           onChange={(e) => setSecondaryColor(e.target.value)}
         />
-        <label>Color: </label>
+        <label>color</label>
         <input
           className="input-color-picker"
           type="color"
