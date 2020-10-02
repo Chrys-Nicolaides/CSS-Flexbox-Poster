@@ -4,7 +4,7 @@ const Order = () => {
   return (
     <div>
       <div className="FlexHeading">order</div>
-      <header className="FlexSubHeading">order</header>
+      {/* <header className="FlexSubHeading">order</header> */}
       <div
         className="order-container container"
         style={{ touchAction: "none" }}

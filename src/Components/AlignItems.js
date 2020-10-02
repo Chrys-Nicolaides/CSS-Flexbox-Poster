@@ -15,7 +15,6 @@ const AlignItems = () => {
         <div className="box"></div>
         <div className="box"></div>
       </div>
-      <div className="FlexHeading">align-items</div>
       <header className="FlexSubHeading">flex-end</header>
       <div
         className="ai-flex-end-container container"
@@ -26,7 +25,6 @@ const AlignItems = () => {
         <div className="box"></div>
         <div className="box"></div>
       </div>
-      <div className="FlexHeading">align-items</div>
       <header className="FlexSubHeading">center</header>
       <div
         className="ai-center-container container"
@@ -37,7 +35,6 @@ const AlignItems = () => {
         <div className="box"></div>
         <div className="box"></div>
       </div>
-      <div className="FlexHeading">align-items</div>
       <header className="FlexSubHeading">stretch</header>
       <ResizableBox
         width={600}
@@ -52,7 +49,6 @@ const AlignItems = () => {
         <div className="box"></div>
         <div className="box"></div>
       </ResizableBox>
-      <div className="FlexHeading">align-items</div>
       <header className="FlexSubHeading">baseline</header>
       <div
         className="ai-baseline-container container"
