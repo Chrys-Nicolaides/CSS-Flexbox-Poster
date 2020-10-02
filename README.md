@@ -1,4 +1,4 @@
-### Flexbox! 💪🥊
+### Flexbox! 💪🥊 2.0
 
 I've been lucky enough to enter the world of development where Flexbox exists as an awesome and widely supported tool, and not have to experience the infamous struggle of trying to vertically center anything using older CSS properties. 
 
