@@ -40,6 +40,7 @@ function App() {
       </div>
       <h2>CSS</h2>
       <h1>Flexbox.</h1>
+      <div className="pattern"></div>
       <div>
         <p>
           I'm baby locavore retro shoreditch offal. Jean shorts mixtape
